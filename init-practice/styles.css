@@ -88,6 +88,10 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
+.section tr {
+
+}
+
 .schedule-list {
     list-style: none;
     text-align: center;
@@ -106,12 +110,17 @@ nav ul li a:hover {
     text-align: center;
 }
 
-
-.schedule-list p {
+.schedule-list table {
     font-size: 1.1rem;
     margin: auto;
+    text-align: justify;
+}
+
+.schedule-list p {
+
+    font-size: 1.1rem;
+    margin: 0;
     align-items: center;
-    justify-content: center;
 
 }
 
