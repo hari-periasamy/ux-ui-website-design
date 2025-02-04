@@ -17,6 +17,12 @@ body {
     margin: 0 auto;
 }
 
+mark {
+  background : #f4f7fa;
+  color: #0055A5;
+}
+
+
 /* Header Styles */
 header {
     background-color: #0055A5;
@@ -60,6 +66,40 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Venue Styles*/
+
+.venue {
+display: grid;
+ align-items: center;
+ grid-template-columns: 1fr 1fr 1fr;
+ column-gap: 5px;
+
+}
+
+.venue h2{
+ font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.venue p {
+    font-size: 1.1rem;
+    text-align: left;
+    margin: 5%;
+}
+
+.img_pos {
+  float: right;
+  right: 2%;
+  width: 90%
+}
+
+.venue-text {
+  font-size: 70px;
+}
+
+
+
 /* Section Styles */
 .section {
     padding: 40px 0;
@@ -88,9 +128,13 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-.section tr {
-
+.section address{
+    font-size: 1.1rem;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
 }
+
 
 .schedule-list {
     list-style: none;
