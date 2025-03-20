@@ -1,0 +1,123 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and layout */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #2c3e50;
+  padding: 10px;
+  text-align: center;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4 {
+  margin: 20px 0;
+}
+
+/* Section styling */
+.section {
+  padding: 40px;
+  margin-bottom: 20px;
+}
+
+#title {
+  background-image: url('https://www.aroi.org/images/aroi-logo.png');
+     /* background-size:30% 30% ; /*Ensures the image covers the entire section */
+      background-position:  center; /* Keeps the image centered */
+       background-repeat: no-repeat;
+      height: 20vh; /* Makes the section take up the full viewport height */
+      color: black; /* Text color for readability */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+}
+
+#home #about, #agenda, #speakers, #venue, #committee, #contact {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.item1, .item2 {
+  grid-column:  1; /* Items span 1 column */
+}
+
+.item3 {
+  grid-column: 2; /* This item will take up 2 columns */
+  grid-position : top;
+}
+
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr; /* Stack items vertically on smaller screens */
+  }
+
+  .item3 {
+    grid-column: span 1; /* Item 3 will only take up 1 column in smaller screen */
+  }
+}
+
+
+.grid-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Footer styling */
+footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
