@@ -1,229 +1,142 @@
-/* Global Styles */
+/* Reset styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Body and layout */
 body {
-    background-color: #f4f7fa;
-    color: #333;
-    line-height: 1.6;
+  font-family: Arial, sans-serif;
+  background-color: ;
+  color: #333;
 }
 
-.container {
-    width: 90%;
-    margin: 0 auto;
+home-body {
+      background-color: black;
+      font-family: Arial,sans-serif;
+      padding: 2rem;
 }
 
-mark {
-  background : #f4f7fa;
-  color: #0055A5;
-}
-
-
-/* Header Styles */
 header {
-    background-color: #0055A5;
-    color: white;
-    padding: 40px 0;
-    text-align: center;
+  background-color: #2c3e50;
+  padding: 10px;
+  text-align: center;
 }
 
-header h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+header nav ul {
+  list-style-type: none;
 }
 
-header p {
-    font-size: 1.2rem;
+header nav ul li {
+  display: inline;
+  margin-right: 20px;
 }
 
-/* Navigation Styles */
-nav {
-    background-color: #333;
-    padding: 15px 0;
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-nav ul {
-    list-style: none;
-    text-align: center;
+header nav ul li a:hover {
+  text-decoration: underline;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 20px;
+h1, h2, h3, h4 {
+  margin: 20px 0;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Venue Styles*/
-
-.venue {
-display: grid;
- align-items: center;
- grid-template-columns: 1fr 1fr 1fr;
- column-gap: 5px;
-
-}
-
-.venue h2{
- font-size: 2.5rem;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.venue p {
-    font-size: 1.1rem;
-    text-align: left;
-    margin: 5%;
-}
-
-.img_pos {
-  float: right;
-  right: 2%;
-  width: 90%
-}
-
-.venue-text {
-  font-size: 70px;
-}
-
-
-
-/* Section Styles */
+/* Section styling */
 .section {
-    padding: 40px 0;
-    background-color: white;
-    margin-bottom: 20px;
+  padding: 40px;
+  margin-bottom: 20px;
 }
 
-.section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    text-align: center;
+#title {
+  /*background-image: url('https://www.aroi.org/images/aroi-logo.png');
+
+     /* background-size:30% 30% ; /*Ensures the image covers the entire section
+      background-position:  center; /* Keeps the image centered
+       background-repeat: no-repeat;*/
+          height: 20vh; /* Makes the section take up the full viewport height */
+      color: black; /* Text color for readability */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
 }
 
-.section h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    text-align: center;
-    color: #0055A5;
-}
+#home {
+   background: linear-gradient(to right, #2f5982,#bd0b0b );
+     color: transparent;
+    background-clip: text;
+  background-color: black; /* sets the actual background */
+  border: 1px solid #ddd;
+  border-radius: 8px;
 
-.section p {
-    font-size: 1.1rem;
-    text-align: center;
-    margin: auto;
-
-    margin-bottom: 20px;
-}
-
-.section address{
-    font-size: 1.1rem;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 20px;
 }
 
 
-.schedule-list {
-    list-style: none;
-    text-align: center;
+#about, #agenda, #speakers, #venue, #committee, #contact {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }
 
-.schedule-list li {
-    margin: 20px 0;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
-.schedule-list h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    text-align: center;
+.item1, .item2 {
+  grid-column:  1; /* Items span 1 column */
 }
 
-.schedule-list table {
-    font-size: 1.1rem;
-    margin: auto;
-    text-align: justify;
+.item3 {
+  grid-column: 2; /* This item will take up 2 columns */
+  /*grid-position : top;*/
+  align-self : flex-start;
 }
 
-.schedule-list p {
 
-    font-size: 1.1rem;
-    margin: 0;
-    align-items: center;
-
-}
-
-form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-}
-
-form input, form textarea {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
-}
-
-form button {
-    padding: 15px;
-    background-color: #0055A5;
-    color: white;
-    border: none;
-    font-size: 1.2rem;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-form button:hover {
-    background-color: #003D72;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer p {
-    font-size: 1rem;
-}
-
-/* Responsive Design */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
+  .grid {
+    grid-template-columns: 1fr; /* Stack items vertically on smaller screens */
+  }
 
-    nav ul li {
-        margin: 0 10px;
-    }
+  .item3 {
+    grid-column: span 1; /* Item 3 will only take up 1 column in smaller screen */
+  }
+}
 
-    form {
-        max-width: 100%;
-    }
 
-    .schedule-list li {
-        padding: 15px;
-    }
+.grid-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Footer styling */
+footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
