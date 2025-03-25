@@ -131,9 +131,19 @@ h1, h2, h3, h4 {
     grid-template-columns: 1fr; /* Stack items vertically on smaller screens */
   }
 
+  .item1 {
+    grid-column: span 1; /* Item 3 will only take up 1 column in smaller screen */
+  }
+
+  .item2 {
+    grid-column: span 1; /* Item 3 will only take up 1 column in smaller screen */
+  }
+
   .item3 {
     grid-column: span 1; /* Item 3 will only take up 1 column in smaller screen */
   }
+
+
 }
 
 
