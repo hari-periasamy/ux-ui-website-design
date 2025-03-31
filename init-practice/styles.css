@@ -86,7 +86,7 @@ h1, h2, h3, h4 {
      color: transparent;
     background-clip: text;
   background-color: black; /* sets the actual background */
-  border: 1px solid #ddd;
+   border: 1px solid #ddd;
   border-radius: 8px;
 
 }
