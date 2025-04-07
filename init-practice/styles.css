@@ -169,6 +169,11 @@ h1, h2, h3, h4 {
     grid-column: span 1; /* Item 3 will only take up 1 column in smaller screen */
   }
 
+.h1 {
+grid-column: span 1;
+}
+
+
 
 }
 
