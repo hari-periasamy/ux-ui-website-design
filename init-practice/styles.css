@@ -216,6 +216,7 @@ footer {
 
   .grid-item {
    grid-column: span 1;
+   grid-template-columns: 1fr;
   }
 
   .header {

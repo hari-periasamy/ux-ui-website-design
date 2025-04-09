@@ -20,7 +20,7 @@
         </section>
     </div>
 
-    <div class="grid-item;" style="display: inline; justify-items: end;">
+    <div class="grid-item;" style="display: inline; justify-items: end;  grid-template-columns: fit-content(100%);">
          <section class="section" style="height: 20vh;">
        <img   src="https://www.aroi.org/images/aroi-logo.png" alt="title_img">
          </section>
@@ -30,10 +30,12 @@
 
 <!-----------------------------------------------------------------Title Section------------------------------------------------------------------------------->
 
-  <section id="title" class="section" style="background-color: white; border: none ;">
+  <section id="title" class="section" style="border: none ; ">
+      <div class="grid" style="grid-template-columns: 1fr">
       <h1 style="font-size: 60px;font-family:  Georgia; text-wrap: pretty; max-width: 100%; text-align:center;">
              Deiva's Cancer Centre and Department of Radiation Oncology, Tirunelveli
       </h1>
+      </div>
   </section>
 
 <header>
@@ -41,7 +43,7 @@
 </header>
 
 <!-----------------------------------------------------------------Section Navigation Buttons----------------------------------------------------------------->
-  <header >
+  <header style="grid-template-columns: fit-content(100%);" >
     <nav >
       <ul >
         <li><a href="#home">Home</a></li>
