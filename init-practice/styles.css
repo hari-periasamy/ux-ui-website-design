@@ -173,6 +173,27 @@ h1, h2, h3, h4 {
 grid-column: span 1;
 }
 
+ .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .item1 {
+    grid-column: span 1; /* Item 3 will only take up 1 column in smaller screen */
+  }
+
+  .item2 {
+    grid-column: span 1; /* Item 3 will only take up 1 column in smaller screen */
+  }
+
+  .grid-item {
+   grid-column: span 1;
+   grid-template-columns: 1fr;
+  }
+
+  .header {
+   grid-column: span 1;
+  }
+
 
 
 }
@@ -200,18 +221,17 @@ footer {
   text-align: center;
 }
 
-/* Media queries */
-@media (max-width: 768px) {
+/* Media queriesmedia (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
   }
 
   .item1 {
-    grid-column: span 1; /* Item 3 will only take up 1 column in smaller screen */
+    grid-column: span 1; /* Item 3 will only take up 1 column in smaller screen
   }
 
   .item2 {
-    grid-column: span 1; /* Item 3 will only take up 1 column in smaller screen */
+    grid-column: span 1; /* Item 3 will only take up 1 column in smaller screen
   }
 
   .grid-item {
@@ -223,6 +243,7 @@ footer {
    grid-column: span 1;
   }
 }
+ */
 
 
 .container {
